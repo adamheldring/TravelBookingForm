@@ -1,6 +1,7 @@
-$font-stack: 'Lato', sans-serif;;
+$font-stack: 'Roboto', sans-serif;;
 $primary-color: #E3E3E3;
 $booking-blue: #003d50;
+$logo-red: #d81939;
 
 * {
   box-sizing: border-box;
@@ -11,26 +12,93 @@ body {
   margin: 0;
   padding: 0;
   font-family: $font-stack;
+  font-size: 15px;
 }
 
-nav {
+header {
   background: #FFF;
+  width: 100%;
   height: 70px;
+  display: flex;
+  align-items: center;
+
+  p {
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    margin-right: 40px;
+  }
+
+  .header-left-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    nav:hover {
+      cursor: pointer;
+    }
+    nav {
+      background: $logo-red;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+
+      .hamburger-container {
+        margin-top: 2px;
+
+        .hamburger-bar {
+          width: 22px;
+          height: 3px;
+          margin-bottom: 4px;
+          background: #FFF;
+        }
+      }
+    }
+  }
+  .header-right-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .logo-container {
+      height: 70px;
+      background: $logo-red;
+
+      img {
+        margin-top: 22px;
+        margin-right: 30px;
+        margin-left: 49px;
+        width: 161px;
+      }
+    }
+    .blue-stripe {
+      background: $booking-blue;
+      height: 70px;
+      width: 6px;
+      margin-right: 3px;
+    }
+  }
 }
 .hero {
   position: absolute;
   z-index: -10;
-  height: 500px;
-  background: yellow;
+  height: 450px;
+  overflow: hidden;
 }
+
 .main-wrapper {
-  width: 800px;
-  margin: 20px auto;
+  width: 100%;
   display: flex;
+  align-items: center;
   flex-flow: column wrap;
 
   .booking-tabs-container {
     margin-top: 70px;
+    width: 849px;
+
     .booking-options-list {
       margin: 0;
       padding: 0;
@@ -52,6 +120,7 @@ nav {
         @extend .booking-tab;
         background: $primary-color;
         color: $booking-blue;
+        font-weight: 500;
         border-top: 3px solid #C9333F;
       }
       .booking-tab-active:hover {
@@ -63,7 +132,7 @@ nav {
 
   .booking-container {
     background: $primary-color;
-    width: 800px;
+    width: 849px;
     padding: 24px;
     display: flex;
     flex-wrap: wrap;
@@ -95,4 +164,47 @@ nav {
   }
 
 
+}
+.lower-section-container {
+  background: #F1F1F1;
+  width: 100%;
+  margin-top: 140px;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+
+  .promotion-container {
+    h1 {
+      margin-top: 74px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-size: 31px;
+      letter-spacing: 0.8px;
+      color: $booking-blue;
+    }
+    p {
+      margin-top: 10px;
+      margin-bottom: 45px;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+      span {
+        color: $logo-red;
+        border-bottom: 1.5px solid #CCCCCC;
+      }
+      span:hover {
+        color: $booking-blue;
+        border-bottom: 1.5px solid $booking-blue;
+        cursor: pointer;
+      }
+    }
+    img {
+      width: 1128px;
+    }
+
+  }
+}
+
+.scrollForcer {
+  background: lightgrey;
+  height: 1500px;
 }
