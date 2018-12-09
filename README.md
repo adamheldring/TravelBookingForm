@@ -1,3 +1,5 @@
+(work in progress)
+
 # Build a Travel Booking Form
 
 In today's assignment we are going to learn how to use SASS and take our frontend skills to a new level. Your task is to build a copy of the [Norweigan](https://www.norwegian.com/se/) flight booking form :point_down:.
@@ -12,10 +14,10 @@ Once you've completed the first tab layout and feel comfortable with SASS, then 
 
 In the code folder of this assignment is a copy of the Technigo react starter project. You will need to begin by adding SASS to the project.
 
-If you're running **React-scripts 2.0** or higher, which the starter code for this assignment is, then use: 
+If you're running **React-scripts 2.0** or higher, which the starter code for this assignment is, then use:
 https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-sass-stylesheet
 
-If your React project is running a lower version than 2.0 – update to more easily use SASS. 
+If your React project is running a lower version than 2.0 – update to more easily use SASS.
 
 Once you have everything installed, start by drawing the structure with pen and paper to get your initial solution clear in your head before you start coding.
 
